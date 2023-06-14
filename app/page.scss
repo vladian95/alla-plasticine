@@ -1,15 +1,9 @@
-@font-face {
-  src: url('https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2')
-    format('woff2');
-  font-family: 'Meta';
-  font-style: normal;
-  font-weight: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Nabla:EDPT,EHLT@30..200,24&display=swap');
 
 .home {
   display: flex;
   align-items: center;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: center;
   height: 100vh;
   &__links {
@@ -22,10 +16,10 @@
 }
 
 .home__name {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
 }
 
 .home__name__text {
