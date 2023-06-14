@@ -7,7 +7,7 @@ const HomeFooter = () => {
     <footer className="homeFooter">
       <div className="homeFooter__inner">
         <p>developed by</p>
-
+        <h3>Vladian95</h3>
         <div className="homeFoote__icons">
           <FontAwesomeIcon className="homeFoote__icon" icon={faInstagram} />
           <FontAwesomeIcon className="homeFoote__icon" icon={faTelegram} />
