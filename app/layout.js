@@ -1,7 +1,8 @@
 'use client';
-import './globals.scss';
+
+import { motion, AnimatePresence } from 'framer-motion';
 import { Inter } from 'next/font/google';
-import { AnimatePresence } from 'framer-motion';
+import './globals.scss';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -13,9 +14,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <AnimatePresence>
-          <main>{children}</main>
-        </AnimatePresence>
+        <div className=".effect-1">
+          <AnimatePresence>{children}</AnimatePresence>
+        </div>
       </body>
     </html>
   );

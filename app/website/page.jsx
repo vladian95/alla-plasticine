@@ -12,7 +12,7 @@ const Website = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2, ease: 'easeOut' }}
-      exit={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
       className="site__wrapper"
     >
       <div className="site">
