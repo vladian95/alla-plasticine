@@ -1,8 +1,9 @@
 'use client';
 
-import { motion, AnimatePresence } from 'framer-motion';
+import { useRouter } from 'next/navigation';
 import { Inter } from 'next/font/google';
 import './globals.scss';
+import { AnimatePresence } from 'framer-motion';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -11,12 +12,14 @@ const inter = Inter({ subsets: ['latin'] });
 // };
 
 export default function RootLayout({ children }) {
+  const router = useRouter();
+
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className=".effect-1">
-          <AnimatePresence>{children}</AnimatePresence>
-        </div>
+        <AnimatePresence mode={'wait'} initial={true}>
+          <main key={router.route}>{children}</main>
+        </AnimatePresence>
       </body>
     </html>
   );

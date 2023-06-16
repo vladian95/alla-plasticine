@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import './page.scss';
 
 // export const metadata = {
@@ -11,7 +12,7 @@ const Website = () => {
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 2, ease: 'easeOut' }}
+      transition={{ duration: 1, ease: 'easeOut' }}
       exit={{ opacity: 0 }}
       className="site__wrapper"
     >
@@ -24,6 +25,9 @@ const Website = () => {
           WEBSITE
         </motion.h1>
       </div>
+      <Link className="home__link" href="/">
+        back
+      </Link>
     </motion.section>
   );
 };
